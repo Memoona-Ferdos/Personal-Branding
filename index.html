@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A LinkedIn Rebuild for Anna Levitcaia · Gorg Wear</title>
+  <script src="https://tailwindcss.com"></script>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            brand: {
+              teal: '#0E4D64',
+              dark: '#14171A',
+              gold: '#D4AF37',
+              cream: '#FAF9F6',
+              ink: '#18181B'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #FAF9F6;
+      color: #18181B;
+    }
+    .glass-nav {
+      background: rgba(250, 249, 246, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(24, 24, 27, 0.08);
+    }
+    .headline-card.active {
+      border-color: #0E4D64;
+      background-color: #F0F7F9;
+      box-shadow: 0 10px 25px -5px rgba(14, 77, 100, 0.12);
+    }
+    .badge-pill {
+      background: #FEF3C7;
+      color: #92400E;
+      border: 1px solid #FDE68A;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-teal-900 selection:text-white">
+
+  <!-- Top Sticky Header -->
+  <header class="glass-nav sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <span class="w-2.5 h-2.5 rounded-full bg-teal-800 inline-block"></span>
+        <span class="font-bold text-sm tracking-tight text-zinc-900">For Anna Levitcaia</span>
+        <span class="hidden sm:inline text-xs text-zinc-400">· LinkedIn Rebuild</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-xs font-medium text-zinc-600">
+        <a href="#journey" class="hover:text-zinc-900 transition">The journey</a>
+        <a href="#before-after" class="hover:text-zinc-900 transition">Before &amp; after</a>
+        <a href="#headlines" class="hover:text-zinc-900 transition">Headlines</a>
+        <a href="#about" class="hover:text-zinc-900 transition">About</a>
+        <a href="#reply" class="hover:text-zinc-900 transition">Message me</a>
+      </nav>
+      <a href="#reply" class="text-xs font-semibold bg-zinc-900 text-white px-3.5 py-2 rounded-full hover:bg-teal-900 transition">
+        Claim your rebuild
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-14 pb-12">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold badge-pill mb-6">
+      <span>Free rebuild · made for Anna Levitcaia</span>
+    </div>
+
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-zinc-900 leading-[1.08] max-w-4xl">
+      Let’s make your brand look as bold as the clothes you build, Anna.
+    </h1>
+
+    <p class="mt-5 text-lg sm:text-xl text-zinc-600 max-w-2xl leading-relaxed">
+      When buyers, partners, and press get what <strong class="text-zinc-900">Gorg Wear</strong> stands for in seconds, the right people follow, refer, and message you. I rebuilt your profile so that happens. <strong class="text-zinc-900">It’s yours, free.</strong>
+    </p>
+
+    <div class="mt-7 flex flex-wrap items-center gap-3">
+      <a href="#before-after" class="px-5 py-3 rounded-xl bg-zinc-900 text-white text-sm font-semibold hover:bg-teal-900 transition shadow-sm">
+        See the before &amp; after
+      </a>
+      <a href="#headlines" class="px-5 py-3 rounded-xl bg-white text-zinc-900 border border-zinc-200 text-sm font-semibold hover:border-zinc-400 transition">
+        Pick your headline
+      </a>
+      <span class="text-xs text-zinc-500 ml-1">A 2-minute read. Nothing to sign up for.</span>
+    </div>
+
+    <!-- Live Interactive LinkedIn Profile Mockup -->
+    <div class="mt-12 bg-white rounded-2xl border border-zinc-200 shadow-xl overflow-hidden">
+      <!-- Fake LinkedIn Top Bar -->
+      <div class="bg-zinc-50 border-b border-zinc-200 px-4 py-2.5 flex items-center justify-between text-xs text-zinc-500">
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6 rounded bg-[#0A66C2] text-white font-bold flex items-center justify-center text-xs">in</div>
+          <div class="bg-zinc-200/70 px-3 py-1 rounded text-zinc-600 w-44 sm:w-64 truncate">Anna Levitcaia · Gorg Wear</div>
+        </div>
+        <span class="text-[11px] font-medium text-teal-800 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200">
+          Live Preview · 1584 × 396 Banner
+        </span>
+      </div>
+
+      <!-- Banner -->
+      <div class="relative h-44 sm:h-56 w-full bg-zinc-900 overflow-hidden">
+        <img src="banner.jpg" alt="Gorg Wear Studio Banner" onerror="this.style.display='none'" class="w-full h-full object-cover opacity-90" />
+        <!-- Architectural Studio Fallback Graphic matching Anna's Banner -->
+        <div class="absolute inset-0 bg-gradient-to-r from-zinc-900 via-zinc-800/95 to-zinc-700/80 flex flex-col items-center justify-center text-center px-6 -z-0">
+          <span class="text-white/30 text-xs tracking-[0.45em] uppercase font-semibold mb-1">G O R G</span>
+          <span class="text-white text-4xl sm:text-6xl font-black tracking-[0.18em] uppercase drop-shadow">WEAR</span>
+          <span class="text-zinc-300 text-[11px] sm:text-xs tracking-[0.35em] uppercase mt-2">BE TRUE TO YOURSELF</span>
+        </div>
+      </div>
+
+      <!-- Profile Details -->
+      <div class="px-6 sm:px-8 pb-7 relative">
+        <!-- Avatar -->
+        <div class="-mt-16 sm:-mt-20 mb-4 relative inline-block">
+          <div class="w-28 h-28 sm:w-36 sm:h-36 rounded-full border-4 border-white shadow-md overflow-hidden bg-[#0E4D64] flex items-center justify-center">
+            <img src="profile.jpg" alt="Anna Levitcaia" onerror="this.style.display='none'" class="w-full h-full object-cover" />
+            <div class="text-center text-white select-none">
+              <span class="block text-2xl sm:text-3xl font-bold tracking-wider">AL</span>
+              <span class="block text-[9px] uppercase tracking-widest text-teal-200 mt-0.5">Be True</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div class="max-w-2xl">
+            <div class="flex items-center gap-2 flex-wrap">
+              <h2 class="text-2xl font-bold text-zinc-900">Anna Levitcaia</h2>
+              <span class="text-xs font-medium text-zinc-500 border border-zinc-200 px-2 py-0.5 rounded-full">Founder</span>
+            </div>
+            <!-- Dynamic Headline Target -->
+            <p id="hero-live-headline" class="mt-1.5 text-sm sm:text-base text-zinc-800 font-medium leading-snug">
+              Founder at Gorg Wear | Authentic UAE-Made Apparel Built for Resilience &amp; Self-Expression | "Be True To Yourself" · Shipping Worldwide
+            </p>
+            <p class="mt-2 text-xs text-zinc-500">
+              Dubai, United Arab Emirates · <span class="text-[#0A66C2] font-semibold">Contact info</span>
+            </p>
+          </div>
+
+          <div class="flex items-center gap-2 shrink-0">
+            <span class="px-4 py-1.5 rounded-full bg-[#0A66C2] text-white text-xs font-semibold">Message</span>
+            <span class="px-4 py-1.5 rounded-full border border-[#0A66C2] text-[#0A66C2] text-xs font-semibold">Follow</span>
+            <span class="px-3 py-1.5 rounded-full border border-zinc-300 text-zinc-600 text-xs font-semibold">More</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Step-by-Step Journey -->
+  <section id="journey" class="max-w-5xl mx-auto px-4 sm:px-6 py-14 border-t border-zinc-200/80">
+    <span class="text-xs font-bold uppercase tracking-widest text-teal-800">The journey</span>
+    <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-zinc-900">
+      How buyers, retailers, and press judge a founder on LinkedIn.
+    </h2>
+    <p class="mt-2 text-zinc-600 max-w-2xl">
+      Three steps. That’s the whole game. Your brand visuals already win step one; this rebuild fixes steps two and three.
+    </p>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm">
+        <span class="inline-block text-xs font-bold px-2.5 py-1 rounded-md bg-zinc-100 text-zinc-800 mb-3">Step 1</span>
+        <h3 class="font-bold text-lg text-zinc-900">They see Gorg Wear</h3>
+        <p class="mt-2 text-sm text-zinc-600 leading-relaxed">
+          Someone sees your "Be True To Yourself" pieces, a Dubai founder post, or a comment in their feed. Curiosity sparks.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border-2 border-teal-800 shadow-md relative">
+        <span class="inline-block text-xs font-bold px-2.5 py-1 rounded-md bg-teal-900 text-white mb-3">Step 2 · The Bottleneck</span>
+        <h3 class="font-bold text-lg text-zinc-900">They click your name</h3>
+        <p class="mt-2 text-sm text-zinc-600 leading-relaxed">
+          One tap opens your profile: your digital flagship store. Right now, your headline says <em>"leading business ownership and growth."</em>
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm">
+        <span class="inline-block text-xs font-bold px-2.5 py-1 rounded-md bg-zinc-100 text-zinc-800 mb-3">Step 3</span>
+        <h3 class="font-bold text-lg text-zinc-900">They get it, or leave</h3>
